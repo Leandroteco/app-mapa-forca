@@ -103,9 +103,9 @@
 
 .botao {
     position: absolute;
-    background: rgba(255, 0, 0, 0.35); /* vermelho visível */
-    border-radius: 8px;
+    background: transparent;
 }
+
 
 /* TAMANHO PADRÃO DOS POP */
 .pop {
@@ -136,8 +136,10 @@
     height: 5%;
     left: 39%;
     top: 57%;
-    background: rgba(255, 255, 0, 0.6); /* amarelo */
+    .bcm {
+    background: transparent;
 }
+
 
 /* COLUNA DIREITA */
 .pop31 { left: 72%; top: 28%; }
