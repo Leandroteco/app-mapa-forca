@@ -87,6 +87,66 @@
     height: auto;
     display: block;
 }
+/* Apenas páginas com imagens muito altas */
+.pagina-scroll {
+    overflow-y: auto;
+}
+
+.pagina-scroll .tela {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+/* ============================= */
+/* AJUSTE DOS BOTÕES DO MAPA     */
+/* ============================= */
+
+.botao {
+    position: absolute;
+    background: rgba(255, 0, 0, 0.35); /* vermelho visível */
+    border-radius: 8px;
+}
+
+/* TAMANHO PADRÃO DOS POP */
+.pop {
+    width: 22%;
+    height: 4%;
+}
+
+/* COLUNA ESQUERDA */
+.pop11 { left: 6%; top: 28%; }
+.pop12 { left: 6%; top: 33%; }
+.pop13 { left: 6%; top: 38%; }
+.pop14 { left: 6%; top: 43%; }
+.pop15 { left: 6%; top: 48%; }
+.pop16 { left: 6%; top: 53%; }
+.pop17 { left: 6%; top: 58%; }
+
+/* COLUNA CENTRAL */
+.pop21 { left: 39%; top: 28%; }
+.pop22 { left: 39%; top: 33%; }
+.pop23 { left: 39%; top: 38%; }
+.pop24 { left: 39%; top: 43%; }
+.pop25 { left: 39%; top: 48%; }
+.pop26 { left: 39%; top: 52%; }
+
+/* BCM */
+.bcm {
+    width: 22%;
+    height: 5%;
+    left: 39%;
+    top: 57%;
+    background: rgba(255, 255, 0, 0.6); /* amarelo */
+}
+
+/* COLUNA DIREITA */
+.pop31 { left: 72%; top: 28%; }
+.pop32 { left: 72%; top: 33%; }
+.pop33 { left: 72%; top: 38%; }
+.pop34 { left: 72%; top: 43%; }
+.pop35 { left: 72%; top: 47%; }
+.pop36 { left: 72%; top: 52%; }
+.pop37 { left: 72%; top: 57%; }
 
 
 
