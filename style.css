@@ -74,4 +74,19 @@
 .botao:active {
     transform: scale(0.98);
 }
+/* ===== AJUSTE SOMENTE PARA PÁGINAS INTERNAS ===== */
+
+/* Melhor equilíbrio */
+.pagina-interna {
+    min-height: 100svh;
+    overflow-y: auto;
+}
+
+.pagina-interna .tela {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
