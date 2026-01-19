@@ -17,41 +17,60 @@
     .wrap {
       position: fixed;
       inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background: black;
+      transition: opacity 0.6s ease; /* duração do fade */
+      opacity: 1;
+    }
+
+    .wrap.fade-out {
+      opacity: 0;
     }
 
     video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <div class="wrap">
-    <video id="abertura" autoplay muted playsinline>
+  <div class="wrap" id="wrap">
+    <video id="abertura" muted playsinline preload="auto">
       <source src="abertura_3s.mp4" type="video/mp4">
     </video>
   </div>
 
   <script>
     const v = document.getElementById("abertura");
+    const wrap = document.getElementById("wrap");
 
-    // fallback: garante saída em ~3.1s mesmo se algo atrasar
-    const timer = setTimeout(() => {
-      window.location.href = "index.html";
-    }, 3100);
+    const go = () => {
+      wrap.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 600); // tempo do fade
+    };
 
-    // melhor: quando o vídeo acabar, vai para o app
+    // fallback caso algo falhe
+    const timer = setTimeout(go, 3200);
+
     v.addEventListener("ended", () => {
       clearTimeout(timer);
-      window.location.href = "index.html";
+      go();
     });
+
+    (async () => {
+      try {
+        await v.play();
+      } catch (e) {
+        // Autoplay pode falhar em alguns aparelhos,
+        // mas o timer garante a saída.
+      }
+    })();
   </script>
 
 </body>
 </html>
+
