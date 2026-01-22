@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resultado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Área do formulário */
+    .form-wrap {
+      padding-top: 70px; /* espaço do botão voltar */
+      width: 100%;
+      min-height: 100svh;
+    }
+    .form-wrap iframe {
+      width: 100%;
+      height: 85svh;
+      border: 0;
+    }
+    .abrir {
+      display: inline-block;
+      margin: 90px 16px 16px;
+      padding: 12px 16px;
+      background: #4a2bd6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .dica {
+      margin: 10px 16px;
+      font-family: Arial, sans-serif;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="voltar">← Voltar</a>
+
+  <div class="form-wrap">
+    <!-- 1) Trocaremos o LINK abaixo pelo link "embed" do Google Forms -->
+    <iframe id="frm" src="https://docs.google.com/forms/d/e/1FAIpQLSdynxZrm2kwM1NjcrYjJArErf5mAXCybgloii__gU2VNY9LEA/viewform?usp=header"></iframe>
+
+    <!-- 2) Se o iframe não carregar, use este botão para abrir o Forms -->
+    <a id="abrir" class="abrir" href="https://docs.google.com/forms/d/e/1FAIpQLSdynxZrm2kwM1NjcrYjJArErf5mAXCybgloii__gU2VNY9LEA/viewform?usp=header" target="_blank" rel="noopener">Abrir formulário</a>
+
+    <div class="dica">Se o formulário não aparecer acima, toque em “Abrir formulário”.</div>
+  </div>
+
+  <script>
+    // Vou preencher isso com seu link do Forms no próximo passo.
+  </script>
+
+</body>
+</html>

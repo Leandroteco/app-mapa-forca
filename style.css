@@ -38,6 +38,8 @@
 .b2 { top: 71%; }
 .b3 { top: 78%; }
 .b4 { top: 85%; }
+.b5 { top: 92%; }
+
 
 .voltar {
     position: fixed;
@@ -101,54 +103,54 @@
 /* AJUSTE DOS BOTÕES DO MAPA     */
 /* ============================= */
 
-.botao {
-    position: absolute;
-    background: transparent;
+/* no mapa, a imagem não deve “roubar” o clique */
+.mapa .tela {
+  pointer-events: none;
 }
 
+/* no mapa, sobrescreve o padrão da .botao da tela inicial */
+.mapa .botao {
+  position: absolute;
+  left: auto;
+  width: 22%;
+  height: 4%;
+  z-index: 10;
 
-/* TAMANHO PADRÃO DOS POP */
-.pop {
-    width: 22%;
-    height: 4%;
+  background: transparent;
+
 }
 
 /* COLUNA ESQUERDA */
-.pop11 { left: 6%; top: 28%; }
-.pop12 { left: 6%; top: 33%; }
-.pop13 { left: 6%; top: 38%; }
-.pop14 { left: 6%; top: 43%; }
-.pop15 { left: 6%; top: 48%; }
-.pop16 { left: 6%; top: 53%; }
-.pop17 { left: 6%; top: 58%; }
+.mapa .pop11 { left: 6%;  top: 28%; }
+.mapa .pop12 { left: 6%;  top: 33%; }
+.mapa .pop13 { left: 6%;  top: 38%; }
+.mapa .pop14 { left: 6%;  top: 43%; }
+.mapa .pop15 { left: 6%;  top: 48%; }
+.mapa .pop16 { left: 6%;  top: 53%; }
+.mapa .pop17 { left: 6%;  top: 58%; }
 
 /* COLUNA CENTRAL */
-.pop21 { left: 39%; top: 28%; }
-.pop22 { left: 39%; top: 33%; }
-.pop23 { left: 39%; top: 38%; }
-.pop24 { left: 39%; top: 43%; }
-.pop25 { left: 39%; top: 48%; }
-.pop26 { left: 39%; top: 52%; }
+.mapa .pop21 { left: 39%; top: 28%; }
+.mapa .pop22 { left: 39%; top: 33%; }
+.mapa .pop23 { left: 39%; top: 38%; }
+.mapa .pop24 { left: 39%; top: 43%; }
+.mapa .pop25 { left: 39%; top: 48%; }
+.mapa .pop26 { left: 39%; top: 52%; }
 
 /* BCM */
-.bcm {
-    width: 22%;
-    height: 5%;
-    left: 39%;
-    top: 57%;
-    .bcm {
-    background: transparent;
+.mapa .bcm {
+  left: 39%;
+  top: 57%;
+  width: 22%;
+  height: 5%;
 }
 
-
 /* COLUNA DIREITA */
-.pop31 { left: 72%; top: 28%; }
-.pop32 { left: 72%; top: 33%; }
-.pop33 { left: 72%; top: 38%; }
-.pop34 { left: 72%; top: 43%; }
-.pop35 { left: 72%; top: 47%; }
-.pop36 { left: 72%; top: 52%; }
-.pop37 { left: 72%; top: 57%; }
-
-
+.mapa .pop31 { left: 72%; top: 28%; }
+.mapa .pop32 { left: 72%; top: 33%; }
+.mapa .pop33 { left: 72%; top: 38%; }
+.mapa .pop34 { left: 72%; top: 43%; }
+.mapa .pop35 { left: 72%; top: 47%; }
+.mapa .pop36 { left: 72%; top: 52%; }
+.mapa .pop37 { left: 72%; top: 57%; }
 
