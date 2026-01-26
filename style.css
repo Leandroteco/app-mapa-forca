@@ -154,3 +154,32 @@
 .mapa .pop36 { left: 72%; top: 52%; }
 .mapa .pop37 { left: 72%; top: 57%; }
 
+/* ============================= */
+/* CGP – VISUAL TEMPORÁRIO      */
+/* (apenas para alinhar)        */
+/* ============================= */
+
+.mapa .cgp {
+  width: 22%;
+  height: 4%;
+  background: transparent;
+
+}
+/* ============================= */
+/* POSIÇÃO DOS CGPs NO MAPA     */
+/* ============================= */
+
+.mapa .cgp1 {
+  left: 6%;
+  top: 23%;
+}
+
+.mapa .cgp2 {
+  left: 39%;
+  top: 23%;
+}
+
+.mapa .cgp3 {
+  left: 72%;
+  top: 23%;
+}
